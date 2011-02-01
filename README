@@ -1,0 +1,23 @@
+== Snow Watchr
+
+Scrapes a CT news station's snow closings webpage for specific terms and prints them to the console and sends them to your phone via prowl.
+
+This should be fairly easy to modify for any other news station. Just tweak the site URL and regex to find what you are looking for!
+
+You can also tweak how it notifies you by modifying the post command in send_message.
+
+= Install
+
+    $ gem install bundler
+    $ bundle install
+    $ cp config/prowl.yaml.example config/prowl.yaml
+    
+Then edit your config/prowl.yaml file to use your real API key.
+    
+= Usage
+
+    $ ruby lib/snow_watchr.rb <Term to watch for>
+    
+= Author
+
+Jordan Byron <jordan@ducksoupsoftware.com>
